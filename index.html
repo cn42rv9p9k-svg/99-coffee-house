@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>99 Coffee House</title>
+
+<style>
+*{box-sizing:border-box}
+body{
+margin:0;background:#050505;color:white;
+font-family:Arial,Tahoma,sans-serif
+}
+header{
+position:sticky;top:0;z-index:10;
+background:#080808ee;
+border-bottom:1px solid #8d6725;
+padding:16px
+}
+nav{
+max-width:1100px;margin:auto;
+display:flex;justify-content:space-between;align-items:center
+}
+.logo{font-size:32px;font-weight:900;color:#e2b85b}
+nav span{color:#aaa;font-size:13px}
+.hero{
+min-height:70vh;display:flex;
+align-items:center;justify-content:center;
+text-align:center;padding:50px 20px;
+background:radial-gradient(circle at center,#3b290d,#050505 55%)
+}
+.circle{
+width:190px;height:190px;border:2px solid #d5a84f;
+border-radius:50%;display:flex;
+align-items:center;justify-content:center;
+margin:auto;box-shadow:0 0 70px #d5a84f33
+}
+.circle b{font-size:75px;color:#e7c16d}
+.hero h1{font-size:70px;margin:25px 0 5px}
+.hero h1 small{display:block;font-size:20px;letter-spacing:6px}
+.hero p{color:#999;line-height:2;max-width:600px;margin:auto}
+.btn{
+display:inline-block;margin-top:25px;
+background:#dfb65b;color:#050505;
+border:0;border-radius:12px;
+padding:14px 25px;font-weight:bold;
+text-decoration:none;cursor:pointer
+}
+section{max-width:1100px;margin:auto;padding:70px 20px}
+.title{text-align:center;margin-bottom:30px}
+.title small{color:#d7ab50;letter-spacing:4px}
+.title h2{font-size:38px}
+.grid{
+display:grid;grid-template-columns:repeat(3,1fr);gap:16px
+}
+.card{
+background:#111;border:1px solid #302411;
+border-radius:18px;padding:16px
+}
+.pic{
+height:150px;border-radius:13px;
+background:radial-gradient(circle,#4b3515,#080808);
+display:flex;align-items:center;
+justify-content:center;font-size:60px
+}
+.card h3{margin-bottom:5px}
+.card p{color:#777;font-size:13px}
+.price{color:#e4bd65;font-weight:bold;font-size:17px}
+.order{
+background:#0d0d0d;border:1px solid #5b431b;
+border-radius:20px;padding:30px;text-align:center;
+color:#aaa;line-height:2
+}
+footer{
+border-top:1px solid #211a0e;
+text-align:center;padding:30px;color:#666
+}
+@media(max-width:700px){
+.grid{grid-template-columns:1fr 1fr}
+.hero h1{font-size:55px}
+}
+@media(max-width:450px){
+.grid{grid-template-columns:1fr}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<nav>
+<div class="logo">99</div>
+<span>COFFEE HOUSE</span>
+</nav>
+</header>
+
+<section class="hero">
+
+<div>
+
+<div class="circle">
+<b>99</b>
+</div>
+
+<h1>
+99
+<small>COFFEE HOUSE</small>
+</h1>
+
+<p>
+قهوة مختصة ومشروبات باردة وموهيتو وسموثي
+وآيس كريم وحلويات — أهلاً بكم في 99 Coffee House.
+</p>
+
+<a class="btn" href="#menu">شوف المنيو</a>
+
+</div>
+
+</section>
+
+<section id="menu">
+
+<div class="title">
+<small>THE MENU</small>
+<h2>المنيو</h2>
+</div>
+
+<div class="grid">
+
+<div class="card">
+<div class="pic">☕</div>
+<h3>Spanish Latte</h3>
+<p>سبانش لاتيه</p>
+<div class="price">6,000 د.ع</div>
+</div>
+
+<div class="card">
+<div class="pic">☕</div>
+<h3>Classic Latte</h3>
+<p>لاتيه كلاسيك</p>
+<div class="price">5,000 د.ع</div>
+</div>
+
+<div class="card">
+<div class="pic">🧊</div>
+<h3>Iced Latte</h3>
+<p>لاتيه بارد</p>
+<div class="price">6,000 د.ع</div>
+</div>
+
+<div class="card">
+<div class="pic">🍓</div>
+<h3>Strawberry Mojito</h3>
+<p>موهيتو فراولة</p>
+<div class="price">5,000 د.ع</div>
+</div>
+
+<div class="card">
+<div class="pic">🫐</div>
+<h3>Blue Mojito</h3>
+<p>بلو كوراكاو</p>
+<div class="price">5,000 د.ع</div>
+</div>
+
+<div class="card">
+<div class="pic">🍏</div>
+<h3>Apple Mojito</h3>
+<p>موهيتو تفاح ونعناع</p>
+<div class="price">5,000 د.ع</div>
+</div>
+
+<div class="card">
+<div class="pic">🥭</div>
+<h3>Mango Smoothie</h3>
+<p>سموثي مانگو</p>
+<div class="price">6,000 د.ع</div>
+</div>
+
+<div class="card">
+<div class="pic">🍓</div>
+<h3>Strawberry Smoothie</h3>
+<p>سموثي فراولة</p>
+<div class="price">6,000 د.ع</div>
+</div>
+
+<div class="card">
+<div class="pic">🍦</div>
+<h3>Pistachio Ice Cream</h3>
+<p>آيس كريم فستق</p>
+<div class="price">5,000 د.ع</div>
+</div>
+
+<div class="card">
+<div class="pic">🍪</div>
+<h3>Cookies</h3>
+<p>كوكيز</p>
+<div class="price">4,000 د.ع</div>
+</div>
+
+<div class="card">
+<div class="pic">🍫</div>
+<h3>Brownie</h3>
+<p>براوني</p>
+<div class="price">5,000 د.ع</div>
+</div>
+
+<div class="card">
+<div class="pic">🍰</div>
+<h3>San Sebastian</h3>
+<p>سان سباستيان</p>
+<div class="price">7,000 د.ع</div>
+</div>
+
+</div>
+</section>
+
+<section>
+
+<div class="order">
+
+<h2 style="color:#e4bd65">99 Coffee House</h2>
+
+<p>
+الطلب الإلكتروني سيكون متاحاً قريباً.
+<br>
+احفظ هذه الصفحة، وسنكمل بعدها نظام الطلب والـ QR.
+</p>
+
+</div>
+
+</section>
+
+<footer>
+99 Coffee House © 2026
+</footer>
+
+</body>
+</html>
